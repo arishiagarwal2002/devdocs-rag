@@ -19,10 +19,9 @@ RUN pip install --no-cache-dir --upgrade pip && \
 # Copy the full project
 COPY . .
 
-# Pre-download the embedding model so first query isn't slow
-# (sentence-transformers caches to ~/.cache/huggingface by default)
-RUN python -c "from sentence_transformers import SentenceTransformer; \
-               SentenceTransformer('BAAI/bge-small-en-v1.5')" || true
+# Build FAISS index from committed chunks.jsonl
+# (binary files are excluded from git — this rebuilds them at image build time)
+RUN python scripts/build_index_from_jsonl.py
 
 # Streamlit config for HF Spaces (headless, correct port, no CORS)
 ENV STREAMLIT_SERVER_PORT=7860

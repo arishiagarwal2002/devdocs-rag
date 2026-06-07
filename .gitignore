@@ -21,8 +21,10 @@ env/
 # ── Raw scraped docs (re-downloadable via `python -m src.ingest`) ─────────────
 data/raw/
 
-# data/index/ is intentionally COMMITTED so the app works out-of-the-box
-# and HF Spaces can run without re-ingesting (ingest takes ~2 min).
+# Binary index files are rebuilt at Docker build time from chunks.jsonl
+# (HF Spaces blocks binary blobs in git pushes)
+data/index/faiss.index
+data/index/chunks.pkl
 
 # ── OS ────────────────────────────────────────────────────────────────────────
 .DS_Store

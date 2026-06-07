@@ -7,6 +7,5 @@
 *.jsonl text eol=lf
 *.csv  text eol=lf
 
-# Binary files — stored in Git LFS
-*.index filter=lfs diff=lfs merge=lfs -text
-*.pkl   filter=lfs diff=lfs merge=lfs -text
+# Binary index files are NOT stored in git (rebuilt at Docker build time)
+# See scripts/build_index_from_jsonl.py
