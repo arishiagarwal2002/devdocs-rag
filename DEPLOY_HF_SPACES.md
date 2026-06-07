@@ -49,12 +49,12 @@ If `data/index/` is gitignored, remove that line.
 
 ```bash
 # Clone your new Space
-git clone https://huggingface.co/spaces/YOUR_USERNAME/devdocs-rag
+git clone https://huggingface.co/spaces/arishiagarwal2002/devdocs-rag
 cd devdocs-rag
 
 # Copy project files into the Space repo
 # (or add the Space as a second remote to your existing repo)
-git remote add space https://huggingface.co/spaces/YOUR_USERNAME/devdocs-rag
+git remote add space https://huggingface.co/spaces/arishiagarwal2002/devdocs-rag
 
 # The Space needs the app at a specific path — set it in README metadata
 # Add this YAML block at the very TOP of README.md (above everything else):
@@ -112,7 +112,7 @@ git push space main
 
 Once live, your Space URL is:
 ```
-https://YOUR_USERNAME-devdocs-rag.hf.space
+https://arishiagarwal2002-devdocs-rag.hf.space
 ```
 
 Add it to:

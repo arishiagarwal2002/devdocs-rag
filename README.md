@@ -1,3 +1,14 @@
+---
+title: FastAPI Docs RAG Assistant
+emoji: 📚
+colorFrom: purple
+colorTo: blue
+sdk: streamlit
+sdk_version: "1.34.0"
+app_file: app/streamlit_app.py
+pinned: false
+---
+
 # 📚 FastAPI Documentation RAG Assistant
 
 > A production-quality **Retrieval-Augmented Generation** system that answers FastAPI questions grounded in the official documentation — with streaming answers, switchable retrieval pipelines, conversation history, and a full ablation study.
@@ -7,23 +18,13 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-REST_API-009688?style=flat&logo=fastapi&logoColor=white)
 ![FAISS](https://img.shields.io/badge/FAISS-vector_search-0064A0?style=flat)
 ![Ollama](https://img.shields.io/badge/Ollama-llama3.2-black?style=flat)
-![HF Spaces](https://img.shields.io/badge/HF_Spaces-Demo-yellow?style=flat&logo=huggingface)
+[![HF Spaces](https://img.shields.io/badge/HF_Spaces-Live_Demo-yellow?style=flat&logo=huggingface)](https://huggingface.co/spaces/arishiagarwal2002/devdocs-rag)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat)
-
-<!-- Replace YOUR_URL once deployed: -->
-<!-- [![Live Demo](https://img.shields.io/badge/Live_Demo-HF_Spaces-yellow)](https://YOUR_USERNAME-devdocs-rag.hf.space) -->
 
 ---
 
-<!--
-  📽  DEMO GIF — record a 15-second screen capture, then add it here:
-    1. Type a question  →  watch it stream token-by-token
-    2. Switch mode to "+ Reranker"  →  ask a follow-up
-    3. Open the Evaluation tab
-  Convert: ffmpeg -i demo.mp4 -vf "fps=15,scale=1200:-1" docs/demo.gif
-  Then uncomment:
--->
 <!-- ![Demo](docs/demo.gif) -->
+> 📽 *Demo GIF coming soon — see the [live demo on HF Spaces](https://huggingface.co/spaces/arishiagarwal2002/devdocs-rag)*
 
 ## ✨ Features
 
