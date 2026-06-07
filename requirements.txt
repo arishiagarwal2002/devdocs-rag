@@ -1,0 +1,28 @@
+# ── Core RAG ─────────────────────────────────────────────────────────────────
+sentence-transformers>=2.7
+faiss-cpu>=1.8
+numpy>=1.26
+rank-bm25>=0.2
+# Optional: GPU FAISS (comment out faiss-cpu above)
+# faiss-gpu>=1.8
+
+# ── LLM backends ─────────────────────────────────────────────────────────────
+openai>=1.30                   # openai backend
+huggingface_hub>=0.23          # hf backend (HF Spaces) + InferenceClient
+# ollama is a local server — no pip package needed; install from https://ollama.com
+
+# ── Retrieval / reranking ─────────────────────────────────────────────────────
+# sentence-transformers covers the cross-encoder reranker already
+
+# ── API backend ──────────────────────────────────────────────────────────────
+fastapi>=0.111
+uvicorn[standard]>=0.30        # ASGI server  →  uvicorn app.api:app --reload
+
+# ── Streamlit UI ─────────────────────────────────────────────────────────────
+streamlit>=1.34
+plotly>=5.22                   # interactive ablation chart
+pandas>=2.0
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+requests>=2.31                 # (optional) if calling the API from Streamlit
+python-dotenv>=1.0             # load .env files for local dev

@@ -1,0 +1,40 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Environments ──────────────────────────────────────────────────────────────
+.env
+.env.*
+.venv/
+venv/
+env/
+
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.streamlit/secrets.toml   # never commit API keys
+
+# ── Raw scraped docs (re-downloadable via `python -m src.ingest`) ─────────────
+data/raw/
+
+# data/index/ is intentionally COMMITTED so the app works out-of-the-box
+# and HF Spaces can run without re-ingesting (ingest takes ~2 min).
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editors ───────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Logs / temp ───────────────────────────────────────────────────────────────
+*.log
+*.tmp
