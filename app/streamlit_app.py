@@ -59,7 +59,7 @@ ABLATION_DF = pd.DataFrame([
     {"Configuration":      "Baseline  (MiniLM · chunk 800 · dense · k=5)",
      "Recall @ 5": 0.750, "MRR": 0.507, "Faithfulness": 0.667, "Correctness": 0.667},
     {"Configuration":      "Chunk size 400  (measurement artefact — see note)",
-     "Recall @ 5": "—",   "MRR": "—",   "Faithfulness": 0.667, "Correctness": 0.750},
+     "Recall @ 5": None,  "MRR": None,  "Faithfulness": 0.667, "Correctness": 0.750},
     {"Configuration":      "★  BGE-small-en-v1.5 embeddings",
      "Recall @ 5": 0.917, "MRR": 0.739, "Faithfulness": 0.917, "Correctness": 1.000},
     {"Configuration":      "Hybrid BM25 + dense  (Reciprocal Rank Fusion)",
