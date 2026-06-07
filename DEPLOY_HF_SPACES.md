@@ -66,9 +66,7 @@ title: FastAPI Docs RAG Assistant
 emoji: 📚
 colorFrom: purple
 colorTo: blue
-sdk: streamlit
-sdk_version: "1.34.0"
-app_file: app/streamlit_app.py
+sdk: docker
 pinned: false
 ---
 ```
